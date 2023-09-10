@@ -119,11 +119,12 @@ body{
 
 .nav{
     display: flex;
-    position: sticky;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 9999999;
     top: 10px;
     height: 69px;
     width: 75vw;
-    justify-content:end;
     padding: 14px;
     background-color: #121212; 
     margin-bottom: 15px;
@@ -151,7 +152,9 @@ body{
 }
 
 .btn{
-    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
 }
 .btn2:hover{
     color: white;
@@ -214,16 +217,20 @@ body{
 .fNav{
     height: 70px;
     width: 100vw;
-    position: sticky;
-    top: 100%;
+    position: fixed;
+  left: 0;
+  bottom: 0;
     padding-top: 10px;
     padding-left: 10px;
     background-image: linear-gradient( to right, rgb(201, 70, 201), rgb(59, 143, 199));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .fChild{
     display: flex;
-    justify-content: end;
+    justify-self: end;
 }
 
 a{
